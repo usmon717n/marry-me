@@ -1,0 +1,27 @@
+GET http://localhost:3000/register
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "firstName":"Cristiano",
+    "lastName":"Ronaldo",
+    "birthDate":"1985-12-04",
+    "email":"ronaldo@gmail.com",
+    "password":"ronaldo"
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"ronaldo@gmail.com",
+    "password":"ronaldo"
+}
+###
+PATCH  http://localhost:3000/profile/1
+Content-Type: application/json
+
+{
+    "firstName":"Usmon"
+}
